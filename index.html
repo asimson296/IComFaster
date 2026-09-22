@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IComFaster - Image Compressor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>IComFaster</h1>
+        <p class="subtitle">Compress your images quickly and easily.</p>
+
+        <div class="upload-box">
+            <label for="compressionLevel">Reduce image size by:</label>
+
+            <select id="compressionLevel">
+                <option value="5">5%</option>
+                <option value="10">10%</option>
+                <option value="20">20%</option>
+                <option value="30" selected>30%</option>
+                <option value="40">40%</option>
+                <option value="50">50%</option>
+                <option value="60">60%</option>
+                <option value="70">70%</option>
+                <option value="80">80%</option>
+                <option value="90">90%</option>
+            </select>
+
+            <div id="dropZone">
+                <p>Drag & Drop your image here</p>
+                <span>or click to select an image</span>
+                <input type="file" id="imageInput" accept="image/*">
+            </div>
+
+            <div id="previewContainer">
+    <div class="previewBox">
+        <h3>Original</h3>
+        <img id="originalPreview" src="" alt="Original image">
+        <p id="originalSize"></p>
+    </div>
+
+    <div class="previewBox">
+        <h3>Compressed</h3>
+        <img id="compressedPreview" src="" alt="Compressed image">
+        <p id="compressedSize"></p>
+    </div>
+</div>
+
+            <button id="compressBtn">Compress Image</button>
+
+            <div id="result"></div>
+            
+
+            <a id="downloadBtn" style="display:none;">Download Compressed Image</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdnVJKzxGuHir18zvgwmn3WuNSqsCcwmwFpTNLEht_PEMKWZw/viewform?usp=publish-editor" target="_blank" id="feedbackBtn">Give Feedback</a>
+        </div>
+    </div>
+    
+    <div class="about">
+        <h3>About IComFaster</h3>
+        <p>Fast and simple image compression, built with privacy in mind.</p>
+        <p>Built by Asim</p>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
